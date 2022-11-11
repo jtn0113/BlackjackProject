@@ -19,10 +19,10 @@ public class BlackjackHand extends Hand{
 	
 	public int getHandValueHideFirstIndex() {
 		int cardValue = 0;
-		for (Card card : cards) {
-			cardValue += card.getValue();
+		if (!cards.isEmpty()) {
+			cardValue = getHandValue() - cards.get(0).getValue();
 		}
-		return cardValue - cards.get(0).getValue();
+		return cardValue;
 	}
 	
 	public boolean isBlackJack() {
