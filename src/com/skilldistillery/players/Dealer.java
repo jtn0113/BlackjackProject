@@ -16,4 +16,14 @@ public class Dealer extends Player{
 		
 		return card;
 	}
+
+	public Deck getDeck() {
+		return deck;
+	}
+
+	public void setDeck(Deck deck) {
+		this.deck = deck;
+	}
+	
+	
 }

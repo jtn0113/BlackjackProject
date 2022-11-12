@@ -24,4 +24,8 @@ public abstract class Hand {
 		return "Hand [cards=" + cards + "]";
 	}
 	
+	public void emptyHand() {
+		cards.clear();
+	}
+	
 }
